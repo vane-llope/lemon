@@ -8,7 +8,7 @@
   <div class="componentWidth">
     <h1 class="text-center">شمارش کاراکتر,کلمه و جمله</h1>
     <textarea
-      class="form-control text-center"
+      class="form-control text-center darkothercopm"
       style="width:100%; height:260px"
       type=""
       placeholder="متن خود را وارد کنید"
@@ -27,7 +27,7 @@
     </div>
 
     <div class="mt-3 mb-5 text-center" style="height: 80px">
-      <div class="card card-body" style="width: 100%">
+      <div class="card card-body darkothercopm" style="width: 100%">
         <p> تعداد کاراکتر: {{ char }}</p>
         <p> تعداد کلمه: {{ word }}</p>
         <p> تعداد جمله: {{ sentence }}</p>

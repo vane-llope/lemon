@@ -8,12 +8,12 @@
       </div>
     <div class="componentWidth">
       <h1 class="text-center"><strong>پسورد تصادفی</strong></h1>
-      <div class="mt-3 text-center" style="min-height: 120px">
-        <div class="card card-body" style="width: 100%">
+      <div class="mt-1 text-center" style="min-height: 120px">
+        <div class="card card-body darkothercopm" style="width: 100%">
           <p>{{ result }}</p>
         </div>
       </div>
-     <div class="slidecontainer mt-1">
+     <div class="slidecontainer">
         <input
           type="range"
           min="1"
@@ -27,7 +27,7 @@
         <div class="mt-2 d-flex spc">
           <div>
             <input
-              class="inputLength"
+              class="inputLength darkinput "
               type="number"
               id="length"
               min="4"

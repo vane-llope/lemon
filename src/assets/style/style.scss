@@ -4,7 +4,7 @@
   }
 
 $buttom:#84cc16;
-
+$darkmood:rgb(213, 213, 213);
 
 body{
     font-family: ANegaarBold;
@@ -12,6 +12,16 @@ body{
 }
 .brand{
     padding-left:50px;
+}
+.navM{
+    a{
+        text-decoration: none;
+        color: #000;
+        padding-left:35px;
+    }
+    img{
+        width: 40px;
+    }
 }
 
 .btnM{
@@ -29,11 +39,13 @@ body{
      font-size: 20px;
      cursor: pointer;  
 }
+.introimg{
+    img{
+        margin: 0 22%;
+    }
+}
 .intro{
     
-    img{
-        margin:0 22% ;
-    }
     h1{
     font-size: 20px;
     margin:5% auto;}
@@ -155,8 +167,62 @@ width: 50%;
     cursor: pointer;
   }
 
-
+//dark mode changes
+.dark-mode {
+    background-color: black;
+    color: white;
+   .tableM{
+       background-color: $darkmood;
+       
+   } 
+  .introimg{
+      img{
+          display: none;
+      }
+      
+      margin-top: 5%;
+        background-color: #000;
+        height: 10px;
+        background-repeat: no-repeat;}
+   .comment{
+       img{
+           display: none;
+       }
+       background-image: url(../images/contactDark.png);
+       background-repeat: no-repeat;
+       background-color: #000;
+       
+       p{
+           margin-top: 0;
+       }
+       
+   }
+   .navM{
+    a{
+        color: #fff;
+        padding-left:35px
+    }
+} 
+   .darkothercopm{
+    background-color: black;
+    color: #fff;
+   }
+   .darkinput{
+       background-color: $darkmood;
+   }
+   .cmpnt{
+    box-shadow: 0 9px #000; 
+   }
+   
+  }
+  
 @media(max-width:876px){
+    .navM{
+        margin: 5%;
+        a{
+            padding-left: 5px;
+        }
+    }
     .icon{
         margin-top: 5%;
     }
@@ -182,9 +248,9 @@ width: 50%;
     .comment{
         flex-direction: column;
     }
-    .intro{
+    .introimg{
         img{
-            width: 50%;
+            width: 60%;
         }
     }
    

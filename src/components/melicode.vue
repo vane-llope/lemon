@@ -10,7 +10,7 @@
   <div class="componentWidth">
     <h1 class="text-center">تشخیص صحت کد ملی</h1>
     <input
-      class="form-control text-center"
+      class="form-control text-center darkothercopm mt-3"
       type="text"
       placeholder="کد خود را وارد کنید"
       v-model="checkedResult"
@@ -27,8 +27,8 @@
       </div>
     </div>
 
-    <div class="mt-3 text-center" style="min-height: 120px">
-      <div class="card card-body" style="width: 100%">
+    <div class="mt-3 text-center " style="min-height: 120px">
+      <div class="card card-body darkothercopm" style="width: 100%">
         <p>{{ msg }}</p>
       </div>
     </div>

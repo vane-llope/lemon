@@ -1,8 +1,11 @@
 <template>
     <div>
  <!--intro-->
+ <div class="container introimg">
+   <img  src="../assets/images/intro.jpg" alt="">
+ </div>
 <div class="container intro">
-  <img src="../assets/images/intro.jpg" alt="">
+  
   <h1 class="container text-center">این
     <span class="web">وبسایت</span>
      با هدف ارائه محاسبات و ابزارهای آنلاین شروع به کار کرده است  ابزارهایی که هر جایی ممکن است مورد نیاز باشد 
@@ -15,19 +18,19 @@
   <div class="container ">
       <!--row1-->
        <div class="row mt-5">
-    <div class="col-md mb-5 cmpnt" @click="component='numToLetter'; callcomp();" >
+    <div class="col-md mb-5 cmpnt darkothercopm" @click="component='numToLetter'; callcomp();" >
        <img src="../assets/icons/NL.png" alt="">
       <p>تبدیل عدد به حروف </p>
     </div>
-    <div class="col-md  mb-5 cmpnt"  @click="component='passwordGenerator'; callcomp();">
+    <div class="col-md  mb-5 cmpnt darkothercopm"  @click="component='passwordGenerator'; callcomp();">
       <img src="../assets/icons/lock.png" alt="">
      <p>پسورد تصادفی</p>
     </div>
-    <div class="col-md  mb-5 cmpnt"  @click="component='melicode'; callcomp();">
+    <div class="col-md  mb-5 cmpnt darkothercopm"  @click="component='melicode'; callcomp();">
      <img src="../assets/icons/identity.png" alt="">
      <p>صحت کد ملی</p>
     </div>
-     <div class="col-md  mb-5 cmpnt" @click="component='engToPer'; callcomp();">
+     <div class="col-md  mb-5 cmpnt darkothercopm" @click="component='engToPer'; callcomp();">
        <img src="../assets/icons/EtP.png" alt="">
       <p>تبدیل عدد فارسی به انگلیسی</p>
     </div>
@@ -39,37 +42,36 @@
       <p>محاسبه ی سن</p>
       <p  class="cexplain">به میلادی شمسی و قمری</p>
     </div>-->
-    <div class="col-md  mb-5 cmpnt"  @click="component='date'; callcomp();">
+    <div class="col-md  mb-5 cmpnt darkothercopm"  @click="component='date'; callcomp();">
       <img src="../assets/icons/Calendar.png" alt="">
      <p> تاریخ امروز</p>
      <p  class="cexplain">به میلادی شمسی و قمری</p>
     </div>
-     <div class="col-md  mb-5 cmpnt"  @click="component='percentage'; callcomp();">
+     <div class="col-md  mb-5 cmpnt darkothercopm"  @click="component='percentage'; callcomp();">
      <img src="../assets/icons/perspective.png" alt="">
      <p>محاسبه ی درصد</p>
       <p  class="cexplain"> محاسبه ی افزایش یا کاهش درصد حقوق، قیمت و غیره </p>
     </div>
-    <div class="col-md  mb-5 cmpnt"  @click="component='MBI'; callcomp();">
+    <div class="col-md  mb-5 cmpnt darkothercopm "  @click="component='MBI'; callcomp();">
      <img src="../assets/icons/wight.png" alt="">
      <p>  شاخص توده ی بدنی</p>
       <p  class="cexplain">MBI</p>
     </div>
-     <div class="col-md  mb-5 cmpnt"  @click="component='typoStuff'; callcomp();">
+     <div class="col-md  mb-5 cmpnt darkothercopm"  @click="component='typoStuff'; callcomp();">
        <img src="../assets/icons/typo.png" alt="" >
       <p>شمارش تعداد کاراکتر,کلمه و جمله</p>
       <p  class="cexplain"></p>
     </div>
   </div>
   </div>
-  <div class="container comment">.
-      <img src="../assets/images/comment.png" alt="">
+  <div class="container comment d-flex">
+      <img src="../assets/images/comment.png" alt="">  
     <div>
       <img class=" icon" src="../assets/icons/message.png" alt="">
     <p class="text-end " > شما می توانید برای کمک به ما جهت بهتر شدن امکانات و ابزار های آنلاین 
      یا افزودن ابزار های جدید ویا موارد دیگر
-      <br> 
+      
       نظرات، پیشنهادات و انتقادات خود را با کلیک روی این دکمه برای ما ارسال کنید</p>
-      <!--<button class="btnM  mt-5">click</button>-->
       <!-- Button trigger modal -->
 <button type="button" class="btnM mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
   نظرات شما
@@ -131,6 +133,9 @@ export default {
         this.$emit('comp',this.component);
       }
      
+    },
+    mounted() {
+      console.log(this.image)
     },
 }
 </script>

@@ -1,26 +1,16 @@
 <template>
   <div>
-   <nav class="navbar navbar-expand-lg navbar-light ">
-  <div class="container-fluid mt-3">
-    <a class="navbar-brand brand"><img src="./assets/icons/lemon.png" style="width:42px;"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item" @click=" choosen='mainpage'">
-          <a class="nav-link active" style="padding-left:35px;" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-         <a class="nav-link active" style="padding-left:35px;"  aria-current="page" href="#">about</a>
-        </li>
-      </ul>
-      <div class="d-flex" v-bind:class="{ darkmood }" >
-        <button class="btnM"  type="submit">switch</button>
+   <nav class="d-flex JS mt-4 navM" >
+      <div class="d-flex ">
+       <a class="navbar-brand brand"><img src="./assets/icons/lemon.png"></a>
+       <a class="nav-link active "   @click="choosen='mainpage'" href="#"><strong>Home</strong></a>
+       <a class="nav-link active "   href="#"><strong>About</strong></a>
+</div>
+<div class="d-flex" v-bind:class="{ darkmood }" >
+        <button class="btnM" @click="myFunction()">mode</button>
       </div>
-    </div>
-  </div>
-</nav>
+
+    </nav>
 <!--component-->
 <component @comp="call"  v-bind:is="choosen"></component>
  <!--footer-->
@@ -66,8 +56,13 @@ export default {
   methods: {
     call(x){
       this.choosen=x;
-    }
+    },
+   myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
   },
+ 
 }
 </script>
 

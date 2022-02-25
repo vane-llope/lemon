@@ -8,13 +8,13 @@
       <div class="componentWidth">
           <h1 class="text-center">MBI محاسبه ی</h1>
         <input
-          class="form-control text-center"
+          class="form-control text-center darkothercopm"
           type="text"
           placeholder="وزن خود را به واحد کیلو گرم وارد کنید به طور مثال 70"
           v-model="Weight"
         />
         <input
-          class="form-control text-center mt-3"
+          class="form-control text-center mt-3 darkothercopm"
           type="text"
           placeholder="قد خود را (به واحد متر) وارد کنید به طور مثال 1.80"
           v-model="Height"
@@ -32,24 +32,22 @@
           </div>
         </div>
 
-        <div class="mt-3 text-center" style="min-height: 120px">
-          <div class="card card-body" style="width: 100%">
+        <div class="mt-3 text-center " style="min-height: 120px">
+          <div class="card card-body darkothercopm" style="width: 100%">
             <p>{{ result }}</p>
           </div>
         </div>
 
       </div>
     </div>
-    <div class="d-flex JS">
-      <div class="mt-5">
-        <img src="../assets/images/c-pic.jpg" alt="" style="width:100%">
-      </div>
+    <div class="col-12 mt-5">
+    
       
         <div class="text-center" style="min-height: 120px">
-          <div class="card card-body text-end">
+          <div class="card card-body text-end darkothercopm">
             <p>
-              طبق گفته سازمان سلامت جهانی(WHO) شاخص توده بدنی مناسب برای
-              بزرگسالان بین ۱۸.۵ تا ۲۴.۵ تعیین شده است.
+              طبق گفته سازمان سلامت جهانی شاخص توده بدنی مناسب برای
+              بزرگسالان بین ۱۸.۵ تا ۲۴.۵ تعیین شده است
             </p>
             افرادی که 25 تا 29 هستند دارای اضافه وزن بوده
             <p>وافرادی که بالاتر از ۳۰ باشند، جزء افراد چاق به حساب می آیند</p>

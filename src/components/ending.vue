@@ -3,7 +3,7 @@
     <div class="container mt-5">
       <hr style="margin:40px 0"/>
       <div class="row">
-        <div class="col-md mb-5">
+        <div class="col-md mb-5 contactimg">
           <img
             class="rounded-circle"
             style="width: 60%; margin-left: 50px"

@@ -9,7 +9,7 @@
       <div class="componentWidth">
         <h1 class="text-center">تبدیل عدد به حروف</h1>
         <input
-          class="form-control text-center mt-4"
+          class="form-control text-center mt-4 darkothercopm"
           type="text"
           placeholder="عدد را وارد کنید"
           v-model="number"
@@ -25,8 +25,8 @@
             </button>
           </div>
 
-          <div class="mt-3 text-center" style="min-height: 120px">
-            <div class="card card-body" style="width: 100%">
+          <div class="mt-3 text-center" style="min-height: 120px darkothercopm">
+            <div class="card card-body darkothercopm" style="width: 100%">
               <p>{{ resultN }}</p>
             </div>
           </div>

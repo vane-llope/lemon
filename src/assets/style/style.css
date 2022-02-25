@@ -11,6 +11,16 @@ body {
   padding-left: 50px;
 }
 
+.navM a {
+  text-decoration: none;
+  color: #000;
+  padding-left: 35px;
+}
+
+.navM img {
+  width: 40px;
+}
+
 .btnM {
   margin-right: 60px;
   width: 150px;
@@ -27,7 +37,7 @@ body {
   cursor: pointer;
 }
 
-.intro img {
+.introimg img {
   margin: 0 22%;
 }
 
@@ -176,7 +186,66 @@ body {
   cursor: pointer;
 }
 
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode .tableM {
+  background-color: #d5d5d5;
+}
+
+.dark-mode .introimg {
+  margin-top: 5%;
+  background-color: #000;
+  height: 10px;
+  background-repeat: no-repeat;
+}
+
+.dark-mode .introimg img {
+  display: none;
+}
+
+.dark-mode .comment {
+  background-image: url(../images/contactDark.png);
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+.dark-mode .comment img {
+  display: none;
+}
+
+.dark-mode .comment p {
+  margin-top: 0;
+}
+
+.dark-mode .navM a {
+  color: #fff;
+  padding-left: 35px;
+}
+
+.dark-mode .darkothercopm {
+  background-color: black;
+  color: #fff;
+}
+
+.dark-mode .darkinput {
+  background-color: #d5d5d5;
+}
+
+.dark-mode .cmpnt {
+  -webkit-box-shadow: 0 9px #000;
+          box-shadow: 0 9px #000;
+}
+
 @media (max-width: 876px) {
+  .navM {
+    margin: 5%;
+  }
+  .navM a {
+    padding-left: 5px;
+  }
   .icon {
     margin-top: 5%;
   }
@@ -204,8 +273,8 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .intro img {
-    width: 50%;
+  .introimg img {
+    width: 60%;
   }
 }
 /*# sourceMappingURL=style.css.map */

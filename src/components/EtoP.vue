@@ -8,7 +8,7 @@
     <div class="componentWidth">
     <h1 class="text-center">تبدیل عدد فارسی و انگلیسی</h1>
     <input
-      class="form-control text-center mt-5"
+      class="form-control text-center mt-5 darkothercopm"
       type="text"
       placeholder="عدد در این قسمت وارد شود"
       v-model="numberPE"
@@ -24,7 +24,7 @@
       </button>
     </div>
     <div class="mt-3 text-center" style="min-height: 120px">
-      <div class="card card-body" style="width: 100%">
+      <div class="card card-body darkothercopm" style="width: 100%">
         <p>{{ resultPE }}</p>
       </div>
     </div>
