@@ -11,7 +11,6 @@
             alt=""
           />
         </div>
-
         <div class="col-md mb-5">
           <div class="container">
           <p style="text-align: end"><strong>راه های ارتباطی</strong></p>
@@ -57,7 +56,6 @@ export default {
   text-decoration: none;
   margin: 5px 2px;
 }
-
 .fa:hover {
   opacity: 0.7;
 }

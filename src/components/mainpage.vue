@@ -5,10 +5,11 @@
    <img  src="../assets/images/intro.jpg" alt="">
  </div>
 <div class="container intro">
-  
-  <h1 class="container text-center">این
+  <h1 class="container text-center" style="line-height:30px">این
     <span class="web">وبسایت</span>
      با هدف ارائه محاسبات و ابزارهای آنلاین شروع به کار کرده است  ابزارهایی که هر جایی ممکن است مورد نیاز باشد 
+    
+    در این سایت میتوانید انواع محاسبات را به سهولت انجام دهید
      </h1>
 </div>
 <!--services-->
@@ -66,60 +67,19 @@
   </div>
   <div class="container comment d-flex">
       <img src="../assets/images/comment.png" alt="">  
-    <div>
+    <div class="mt-5">
       <img class=" icon" src="../assets/icons/message.png" alt="">
     <p class="text-end " > شما می توانید برای کمک به ما جهت بهتر شدن امکانات و ابزار های آنلاین 
      یا افزودن ابزار های جدید ویا موارد دیگر
       
-      نظرات، پیشنهادات و انتقادات خود را با کلیک روی این دکمه برای ما ارسال کنید</p>
-      <!-- Button trigger modal -->
-<button type="button" class="btnM mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  نظرات شما
-</button>
-
+      نظرات، پیشنهادات و انتقادات خود را برای ما ارسال کنید
+      </p>
+      <br>
   </div>
   </div>
-  
 </div>
-<!-- Modal 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-
-        <div class="form-floating mt-3 ">
-  <input type="text" class="form-control" id="floatingPassword" >
-  <label for="floatingInput">نام</label>
-</div>
-        <div class="form-floating mt-3 mb-3 ">
-  <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com">
-  <label  for="floatingInput">ایمیل</label>
-</div>
-<textarea
-      class="form-control text-center"
-      style="width:100%; height:100px"
-      type=""
-      placeholder="نظر خود را وارد کنید"
-      v-model="text"
-    />
-
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>-->
-    
     </div>
 </template>
-
 <script>
 export default {
     name:'mainpage',
@@ -132,7 +92,6 @@ export default {
       callcomp(){
         this.$emit('comp',this.component);
       }
-     
     },
     mounted() {
       console.log(this.image)

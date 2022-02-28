@@ -12,7 +12,7 @@
             </thead>
             <tbody class="text-center">
               <tr @click="component='passwordGenerator'; callcomp();" >
-                <td>تولید بسورد تصادفی</td>
+                <td>تولید پسورد تصادفی</td>
               </tr>
               <tr  @click="component='melicode'; callcomp();">
                 <td>صحت کد ملی</td>
