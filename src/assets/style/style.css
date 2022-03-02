@@ -1,9 +1,9 @@
 @font-face {
   font-family: sans;
-  src: url(../font/FontsFree-Net-ir_sans.ttf);
+  src: url(../font/A-Iranian-Sans/IranianSans.ttf);
 }
 
-body {
+* {
   font-family: sans;
 }
 
@@ -203,24 +203,26 @@ body {
 }
 
 .dark-mode {
-  background-color: black;
+  background-color: #0f1316;
   color: white;
+  /*  .btnMood{
+       img{
+           transition: 0.6s;
+           width: 35px;
+       }
+       
+   }*/
 }
 
 .dark-mode .tableM {
   background-color: #d5d5d5;
 }
 
-.dark-mode .btnMood img {
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
-  width: 35px;
-}
-
 .dark-mode .introimg {
-  margin-top: 5%;
-  background-color: #000;
-  height: 10px;
+  width: 50%;
+  margin-left: 30%;
+  background-image: url(../images/introDark.jpg);
+  height: 400px;
   background-repeat: no-repeat;
 }
 
@@ -229,18 +231,27 @@ body {
 }
 
 .dark-mode .comment {
-  padding-top: -10px;
-  background-image: url(../images/contactDark.png);
+  background-image: url(../images/contactDark.jpg);
   background-repeat: no-repeat;
-  background-color: #000;
+  height: 400px;
+  border-radius: 15px;
 }
 
 .dark-mode .comment img {
   display: none;
 }
 
+.dark-mode .comment .icon {
+  margin-top: -40px;
+  float: right;
+  display: table-column;
+  width: 12%;
+}
+
 .dark-mode .comment p {
-  margin-top: -10px;
+  margin-top: 50px;
+  width: 40%;
+  float: right;
 }
 
 .dark-mode .navM a {
@@ -249,7 +260,7 @@ body {
 }
 
 .dark-mode .darkothercopm {
-  background-color: black;
+  background-color: #0f1316;
   color: #fff;
 }
 
@@ -263,18 +274,35 @@ body {
 }
 
 .dark-mode .modalM {
-  background-color: #000;
+  background-color: #0f1316;
   color: #fff;
   border: #f5f5f5 3px solid;
   border-radius: 15px;
 }
 
 @media (max-width: 876px) {
-  .navM {
-    margin: 5%;
+  .dark-mode .introimg {
+    width: 90%;
+    margin-left: 0;
+    height: 400px;
   }
-  .navM a {
-    padding-left: 5px;
+  .dark-mode .comment {
+    width: 90%;
+    border-radius: 15px;
+    background-image: url(../images/contactDark-M.jpg);
+    height: 600px;
+  }
+  .dark-mode .comment .icon {
+    width: 40%;
+    margin-top: 230px;
+  }
+  .dark-mode .comment p {
+    width: 100%;
+    margin-left: 0;
+  }
+  .dark-mode .navM a {
+    color: #fff;
+    padding-left: 30px;
   }
   .icon {
     margin-top: 5%;
@@ -304,7 +332,8 @@ body {
             flex-direction: column;
   }
   .introimg img {
-    width: 60%;
+    width: 100%;
+    margin: auto;
   }
   .btnMood {
     margin-right: 0;

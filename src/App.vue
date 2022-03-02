@@ -5,10 +5,13 @@
        <a class="navbar-brand brand"><img src="./assets/icons/lemon.png"></a>
        <a class="nav-link active "   @click="choosen='mainpage'" href="#"><strong>خانه</strong></a>
        <!-- Button trigger modal -->
-<a type="button" class="nav-link active" data-bs-toggle="modal" data-bs-target="#exampleModal"><strong>درباره ی ما</strong></a>
+<a type="button" class="nav-link active" data-bs-toggle="modal" data-bs-target="#exampleModal"><strong>درباره ی ما </strong></a>
 </div>
 <div class=" btnMood " v-bind:class="{ darkmood }" >
-        <button class=" btn " @click="myFunction()"><img src="./assets/icons/Sun.png" alt=""></button>
+  <div class="form-check form-switch " style="font-size:35px">
+        <input type="checkbox"  class=" form-check-input " role="switch" @click="myFunction()" >
+        
+        </div>
       </div>
     </nav>
 <!--component-->

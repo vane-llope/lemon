@@ -4,13 +4,14 @@
  <div class="container introimg">
    <img  src="../assets/images/intro.jpg" alt="">
  </div>
-<div class="container intro">
+<div class="container intro ">
   <h1 class="container text-center" style="line-height:30px">این
     <span class="web">وبسایت</span>
      با هدف ارائه محاسبات و ابزارهای آنلاین شروع به کار کرده است  ابزارهایی که هر جایی ممکن است مورد نیاز باشد 
     
     در این سایت میتوانید انواع محاسبات را به سهولت انجام دهید
      </h1>
+    
 </div>
 <!--services-->
 <div class="container mt-4 text-center">
